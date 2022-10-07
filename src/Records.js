@@ -51,7 +51,9 @@ function Records() {
                 setRecords(records.filter(e => e.id !== record.id));
                 break;
             default:
-                break;
+                console.log("INVALID ACTION!", action);
+                console.log("also this... INVALID ACTION!" + action);
+                alert("INVALID ACTION! " + action);
         }
         
         setError("");
